@@ -1,0 +1,142 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+:root {
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Verydarkblue: hsl(217, 54%, 11%);
+    --Verydarkbluecard: hsl(216, 50%, 16%);
+    --Verydarkblueline: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body,html {
+    height : 100vh;
+    font-family : 'Outfit', sans-serif;
+    background : var(--Verydarkblue);
+    display : flex;
+    align-items : center;
+    justify-content : center;
+}
+
+.card-layout {
+    display : -webkit-box;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+    padding : 4rem 0 0 ;
+
+}
+
+.card-component {
+    background : var(--Verydarkbluecard);
+    width : 25rem;
+    height : 42rem;
+    display : flex;
+    flex-direction : column;
+    position : relative;
+    left : 20%;
+    border-radius : 10px;       
+}
+
+.top-img {
+    width : 22rem;
+    height : 20rem;
+    background-size : cover;
+    overflow : hidden;
+    background-repeat : no-repeat;
+    margin : 20px 10px 10px 20px;
+    border-radius : 10px;
+    transition : all .3s ease-out;
+}
+
+.stats {
+    margin : 0rem 1rem;
+    padding-bottom : 1rem;
+}
+.stats .equi {
+    color : var(--White);
+    font-size : 1.5rem;
+    font-weight : 600;
+    padding-top : 1rem;
+}
+.stats .edit {
+    padding-top : 1rem;
+    line-height : 1.5;
+    font-size : 1.1rem;
+    font-weight : 500;
+    color : var(--Softblue);
+}
+
+.lerr {
+    display : flex;
+    display : -webkit-box;
+    display : -ms-flexbox;
+    padding-top : .2rem;
+    margin-bottom : .5rem;
+}
+.lerr .img1 {
+    height : 1.7rem;
+    margin : .29rem 0 0 0;
+    padding-left : 1rem;
+}
+.lerr .img2 {
+    height : 1.7rem;
+    margin : .29rem 0 0 0;
+    padding-left : 7rem;
+}
+.lerr .price {
+    margin : .5rem 0 0rem .3rem;
+    color : var(--Cyan);
+    font-size : 1.2rem;
+}
+.lerr .days {
+    margin : .5rem 0 0 .4rem;
+    font-size : 1.2rem;
+    color : var(--Softblue);
+}
+.avatar::before {
+    content : "";
+    background : var(--Softblue);
+    height : .1rem;
+    width : 85%;
+    position : absolute;
+    bottom : 8.5rem;
+    left : 4%;
+    opacity : .3;
+}
+.avatar {
+    display : flex;
+    padding-top : 2rem;  
+}
+
+.avatar img {
+    height : 5rem;
+    margin-left : 1rem;
+    background : white;
+    border-radius : 50%;
+}
+.avatar .last {
+    margin : 1.7rem 0 0 1rem;
+    font-size : 1.3rem;
+    color : var(--Softblue);
+
+}
+.avatar .last span {
+    color : var(--White);
+}
+
+@media screen and (min-width : 500px) {
+    .card-component  {
+        left : 0%;
+    }
+}
+@media screen and (min-width : 375px) {
+    .card-component {
+        left : 0%;
+    }
+}

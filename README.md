@@ -2,6 +2,7 @@
 
 ![Design preview for the NFT preview card component coding challenge](./design/desktop-preview.jpg)
 
+Site deployed at -: https://nft-card-three.vercel.app/
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.

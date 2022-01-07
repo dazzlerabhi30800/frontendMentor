@@ -43,6 +43,30 @@ body,html {
     border-radius : 10px;       
 }
 
+.card-content {
+    display : flex;
+    position: relative;
+}
+.card-layer {
+    position : absolute;
+    top : 5%;
+    left : 5.4%;
+    background : hsla(178, 100%, 50%, 0.384);
+    width : 87.5%;
+    height : 93%;
+    border-radius : 10px;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    opacity : 0;
+    transition : all .3s ease-out;
+    cursor : pointer;
+    
+}
+.card-layer:hover {
+    opacity : 1;
+}
+
 .top-img {
     width : 22rem;
     height : 20rem;
@@ -52,6 +76,12 @@ body,html {
     margin : 20px 10px 10px 20px;
     border-radius : 10px;
     transition : all .3s ease-out;
+    cursor : pointer;
+    
+}
+.card-component:hover .top-img {
+    display : inline-block;
+    background : url("images/favicon-32x32.png") ;
 }
 
 .stats {

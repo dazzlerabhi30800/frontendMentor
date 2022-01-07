@@ -2,6 +2,8 @@
 
 ![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
 
+Site is deployed at https://lucid-poincare-68a497.netlify.app/
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.

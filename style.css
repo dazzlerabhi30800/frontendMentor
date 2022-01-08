@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@200&family=Lexend+Deca:wght@200&display=swap');
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --lexend-deca : 'Lexend Deca', sans-serif;
+    --big-shoulder : 'Big Shoulders Display', cursive;
+    --Transparent-white : hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray : hsl(0, 0%, 95%);
+}
+
+body {
+    background: #0F2027; 
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+    height : 100vh;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+}
+
+.card-layout {
+    /* background : white; */
+    width : 55vw;
+    height : 45vh;
+    border-radius : 10px;
+}
+
+
+
+.card-component {
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+}
+.card {
+    display : flex;
+    flex-direction : column;
+    padding-top : 3rem;
+    width : 33.5%;
+    height : 45vh;
+    position : relative;
+    box-shadow : 2px 17px 7px 4px rgba(29, 28, 28, 0.377);
+
+}
+#card1 {
+    background : var(--Bright-orange);
+    border-radius : 10px 0 0 10px;
+}
+#card2 {
+    background : var(--Dark-cyan);
+}
+#card3 {
+    background : var(--Very-dark-cyan);
+    border-radius : 0 10px 10px 0;
+}
+
+.imgTop {
+    width : 3rem;
+    height : 2rem;
+    margin-left : 1.5rem;
+}
+
+.text-wrapper {
+    margin-left : 1.5rem;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    margin-top : 1.5rem;
+}
+.heading {
+    font-size : 2.5rem;
+    font-family : var(--big-shoulder);
+    color : var(--Very-light-gray);
+    letter-spacing : 1.3px;
+}
+.sub-heading {
+    padding-top : 1.8rem;
+    font-size : .8rem;
+    line-height : 1.5;
+    color : var(--Transparent-white);
+    font-family : var(--lexend-deca);
+    padding-right : 2rem;
+}
+
+.btn {
+    /* padding-top : 7rem; */
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    cursor : pointer;
+    /* border : 1px solid white; */
+    height : 20vh;
+}
+
+.button {
+    text-decoration : none;
+    color : rgb(219, 203, 203);
+    border : 1px solid white;
+    border-radius : 20px;
+    padding : .5rem .5rem .5rem .5rem;
+    font-size : .8rem;
+    font-family : var(--lexend-deca);
+    cursor : pointer;
+    font-weight : 700;
+    transition : .5s ease-out;
+   
+}
+.button:hover {
+    color : white;
+    letter-spacing : 2px;
+}
+
+
+@media screen and (max-width : 1004px) {
+   .card-component {
+       flex-direction : column;
+       height : 100vh;
+       position : absolute;
+       top : 5%;
+       right : 5%;
+       /* background : white; */
+   }
+   .card {
+       width : 50%;
+   }
+   #card1 {
+       border-radius : 10px 10px 0 0 ;
+   }
+   #card3 {
+       border-radius : 0 0 10px 10px;
+   }
+}
+
+@media screen and (max-width : 600px) {
+    .card-component {
+        /* background : white; */
+        height : 50vh;
+
+    }
+    .card{
+        width : 70%;
+        height : 30vh;
+    }
+    .sub-heading {
+        padding-top : .2rem;
+        font-size : .7rem;
+
+    }
+    .btn {
+         display : flex;
+         align-items : flex-start;
+         justify-content : start;
+         padding-left : 1.5rem;
+         padding-top : .3rem;
+    }
+}

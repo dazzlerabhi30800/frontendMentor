@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap');
+
+* {
+    margin : 0;
+    padding :0;
+    box-sizing : border-box;
+    font-family : 'Spartan', sans-serif;
+}
+
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    display : grid;
+    justify-content : center;
+    align-items : center;
+    height : 100vh;
+    background : url('images/bg-pattern-bottom-desktop.svg') no-repeat;
+    background-size : cover;
+    object-fit : cover;
+}
+
+.container {
+    width : 60vw;
+}
+
+.top-component {
+    display : flex;
+    justify-content : center;
+    flex-direction : column;
+    max-width : 100%;
+    max-height : 100vh;
+    height : 65vh;
+    /* box-shadow : 2px 5px 20px 11px rgba(20, 9, 9, 0.226); */
+    border-radius : 10px;
+}
+
+.top-heading {
+    display : flex;
+    justify-content : space-between;
+}
+
+.text-wrapper {
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    padding-right : 1rem;
+    padding-left : 1rem;
+    padding-bottom : 2rem;
+    margin-left : 2rem;
+    margin-top : 2rem;
+    margin-bottom : 2rem;
+}
+.heading {
+    padding-top : 1rem;
+    padding-bottom : 2rem;
+    font-size : 2.6rem;
+    display : block;
+    color : var(--Very-Dark-Magenta);
+    font-weight : bolder;
+}
+
+.sub-heading {
+    font-size : 1.2rem;
+    line-height : 1.5;
+    color : var(--Dark-Grayish-Magenta);
+}
+
+.rating-wrapper {
+    display : flex;
+    flex-direction : column;
+    margin-right : 2rem;
+    margin-top : 2rem;
+    max-width : 100%;
+    width : 35rem;
+    padding-top : 2rem;
+}
+.rating {
+    display : flex;
+    padding-top : 3rem;
+    position : relative;
+    padding-left : 1rem;
+}
+.rating .star {
+    padding-right : 1rem;
+}
+.star img {
+    height : 1.3rem;
+}
+
+.rating .comment {
+    font-size : 1rem;
+    color : var(--Very-Dark-Magenta);
+    font-weight : 1000;
+}
+
+
+#rating1 {
+    padding-left : 2rem;
+}
+#rating2 {
+    position : relative;
+    left : 13%;
+    padding-top : 4rem;
+}
+#rating3 {
+    position : relative;
+    left : 24%;
+    padding-top : 4.2rem;
+}
+
+
+.card-container {
+    display : flex;
+    justify-content : center;
+    position : relative;
+    margin-top : 2rem;
+    height : 100%;
+    /* background : white; */
+    
+}
+
+.card {
+    max-width : 80%;
+    width : 30rem;
+    background : var(--Very-Dark-Magenta);
+    margin-left : 1rem;
+    margin-right : 1rem;
+    margin-bottom : 1rem;
+    display : flex;
+    flex-direction : column;
+    border-radius : 10px;
+    height : 19rem;
+    margin-top : 1rem;
+}
+.image-wrapper {
+    display : flex;
+    padding-top : 1rem;
+    padding-left : 1rem;
+    align-items : center;
+}
+.image-wrapper img {
+    width : 5rem;
+    height : 4.5rem;
+    border-radius : 50%;
+}
+.img-text {
+    padding-left : 1rem;
+    font-size : .9rem;
+    color : var(--White);
+}
+.img-text span {
+    display : block;
+    padding-top : .5rem;
+    color : var(--Soft-Pink);
+}
+
+.review-comment {
+    margin-top : 1.5rem;
+    /* background : white; */
+    padding-top : 2rem;
+    padding-bottom : 2rem;
+    padding-right : 1rem;
+    padding-left : 1rem;
+    font-size : 1.2rem;
+    color : var(--Light-Grayish-Magenta);
+    line-height : 1.5;
+
+}
+
+#card2 {
+    position :relative;
+    top : 2.5rem;
+    margin-left : 2.5rem;
+}
+#card3 {
+    position : relative;
+    top : 4.5rem;
+    margin-left : 2.5rem;
+}
+
